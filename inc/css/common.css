@@ -1,0 +1,74 @@
+:root{
+    --teal: #2ec1ac;
+   --teal_hover:#279e8c;
+
+}
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.h-font {
+    font-family: "Merienda", cursive;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.custom-bg{
+background-color: var(--teal);
+border:1px solid var(--teal);
+
+}
+.css-bg:hover{
+background-color: var(--teal_hover);
+border-color: var(--teal_hover);
+}
+.h-line{
+    width: 150px;
+    margin: 0 auto;
+    height: 2px;
+    background-color: #000; /* or any other visible color */
+    
+}
+.custom-alert {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  z-index: 1111;
+  display: none;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 300px;
+  animation: slideIn 0.4s ease forwards;
+}
+
+.alert-success {
+  background-color: #28a745;
+}
+
+.alert-error {
+  background-color: #dc3545;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
